@@ -20,6 +20,7 @@ private:
 				pNext = new Element( *src.pNext );
 			}
 		}
+		Element& operator=( const Element& ) = delete;
 		int GetVal() const
 		{
 			return val;
