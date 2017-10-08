@@ -235,24 +235,35 @@ int main()
 	// I15 homework stuff!!
 	/////////////////////////////////////////////////////////////////////
 	// level 1
-	Stack s;
-	s.Push( 520 );
-	s.Push( 79 );
-	s.Push( 81681185 );
-
-	for( int n : s )
 	{
-		std::cout << n << ", ";
-	}
-	std::cout << std::endl;
+		Stack s;
+		s.Push( 520 );
+		s.Push( 79 );
+		s.Push( 8168118 );
+		s.Push( 6311369 );
 
+		// multiply all elements by 10
+		for( auto& n : s )
+		{
+			n *= 10;
+		}
+
+		// print out all elements
+		for( auto n : s )
+		{
+			std::cout << n << ", ";
+		}
+		std::cout << std::endl;
+	}
 	//// level 2 (uncomment to challenge)
-	//const Stack& cs = s;
-	//for( auto& n : cs )
 	//{
-	//	std::cout << n << ", ";
+	//	const Stack& cs = s;
+	//	for( auto& n : cs )
+	//	{
+	//		std::cout << n << ", ";
+	//	}
+	//	std::cout << std::endl;
 	//}
-	//std::cout << std::endl;
 
 	/////////////////////////////////////////////////////////////////////
 
