@@ -59,15 +59,18 @@ public:
 	}
 	Stack& operator=( const Stack& src )
 	{
-		if( !Empty() )
+		if( &src != this )
 		{
-			delete pTop;
-			pTop = nullptr;
-		}
+			if( !Empty() )
+			{
+				delete pTop;
+				pTop = nullptr;
+			}
 
-		if( !src.Empty() )
-		{
-			pTop = new Element( *src.pTop );
+			if( !src.Empty() )
+			{
+				pTop = new Element( *src.pTop );
+			}
 		}
 		return *this;
 	}
