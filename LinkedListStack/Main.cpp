@@ -4,6 +4,7 @@
 #include <conio.h>
 #include "ChiliString.h"
 #include "Stack.h"
+#include <iostream>
 
 void test1()
 {
@@ -229,6 +230,31 @@ int main()
 	test8();
 	test9();
 	test10();
+
+	/////////////////////////////////////////////////////////////////////
+	// I15 homework stuff!!
+	/////////////////////////////////////////////////////////////////////
+	// level 1
+	Stack s;
+	s.Push( 520 );
+	s.Push( 79 );
+	s.Push( 81681185 );
+
+	for( int n : s )
+	{
+		std::cout << n << ", ";
+	}
+	std::cout << std::endl;
+
+	//// level 2 (uncomment to challenge)
+	//const Stack& cs = s;
+	//for( auto& n : cs )
+	//{
+	//	std::cout << n << ", ";
+	//}
+	//std::cout << std::endl;
+
+	/////////////////////////////////////////////////////////////////////
 
 	_CrtDumpMemoryLeaks();
 	while( !_kbhit() );
