@@ -257,6 +257,12 @@ int main()
 	}
 	//// level 2 (uncomment to challenge)
 	//{
+	//	Stack s;
+	//	s.Push( 520 );
+	//	s.Push( 79 );
+	//	s.Push( 8168118 );
+	//	s.Push( 6311369 );
+
 	//	const Stack& cs = s;
 	//	for( auto& n : cs )
 	//	{
